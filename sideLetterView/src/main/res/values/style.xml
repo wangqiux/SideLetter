@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="slideLetterView">
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="selectedTextColor" format="color|reference"/>
+        <attr name="normalTextSize" format="dimension"/>
+        <attr name="selectedTextSize" format="dimension"/>
+        <attr name="letterMargin" format="dimension"/>
+        <attr name="hintTextSize" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="chooseTextColor" format="color|reference"/>
+        <attr name="circleBackground" format="color|reference"></attr>
+    </declare-styleable>
+</resources>

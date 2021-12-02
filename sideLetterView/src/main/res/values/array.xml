@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="slideLetters">
+        <item>常用语言</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+
+    <string-array name="date">
+        <item>中文</item>
+        <item>英语</item>
+        <item>意大利语</item>
+        <item>法语</item>
+        <item>阿拉伯语</item>
+        <item>葡萄牙语</item>
+        <item>西班牙语</item>
+        <item>孟加拉语</item>
+        <item>克罗地亚语</item>
+        <item>捷克语</item>
+        <item>丹麦语</item>
+        <item>希腊语</item>
+        <item>希伯来语</item>
+        <item>匈牙利</item>
+        <item>西伯利亚语</item>
+        <item>日语</item>
+        <item>马来语</item>
+        <item>韩语</item>
+        <item>波斯语</item>
+        <item>波兰语</item>
+        <item>罗马尼亚语</item>
+        <item>俄罗斯语</item>
+        <item>塞尔维亚语</item>
+        <item>泰语</item>
+        <item>越南语</item>
+        <item>土耳其语</item>
+        <item>乌克兰语</item>
+        <item>菲律宾语</item>
+        <item>芬兰语</item>
+        <item>缅甸语</item>
+        <item>柬埔寨语</item>
+        <item>缅甸语</item>
+        <item>蒙古语</item>
+        <item>尼泊尔语</item>
+        <item>哈萨克语</item>
+        <item>乌尔都语</item>
+        <item>加泰隆语</item>
+        <item>立陶宛语</item>
+        <item>斯洛伐克语</item>
+        <item>斯洛文尼亚语</item>
+        <item>保加利亚语</item>
+        <item>罗曼什语</item>
+        <item>白俄罗斯语</item>
+        <item>阿塞拜疆语</item>
+        <item>老挝语</item>
+        <item>加利西亚语 </item>
+        <item>哈萨克语</item>
+        <item>冰岛语</item>
+        <item>吉尔吉斯语</item>
+    </string-array>
+</resources>

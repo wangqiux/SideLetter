@@ -1,0 +1,3 @@
+include ':sideLetterView'
+include ':app'
+rootProject.name = "SlideLetter"
