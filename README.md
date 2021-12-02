@@ -2,7 +2,7 @@
 字母侧边栏和recyclerview进行联动
 
   效果图
-
+![image](https://github.com/wangqiux/SideLetter/blob/master/Screenrecorder-2021-12-02-14-08-15-64.mp4)
 
 第一步 在project build文件中添加
 
