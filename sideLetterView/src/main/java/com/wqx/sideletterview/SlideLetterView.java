@@ -194,20 +194,21 @@ public class SlideLetterView extends View {
         mNewPosition = (int) (y / (mItemHeight * mLetters.size()) * mLetters.size());
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                Log.e("position", mNewPosition + "");
                 //限定触摸范围
                 if (x < mWidth - 1.5 * mRadius) {
                     return false;
                 }
-                mCenterY = (int) y;
-                startAnimator(1.0f);
-                Log.e("position", mNewPosition + "");
-                if (mNewPosition > mLetters.size()) {
+                if (mNewPosition > mLetters.size()-1) {
                     return false;
                 }
+                mCenterY = (int) y;
+                startAnimator(1.0f);
+
                 isSlide = false;
                 mChoosePosition = mNewPosition;
                 if (mListener != null) {
-                    mListener.onLetterChange(mLetters.get(mNewPosition));
+                    mListener.onLetterChange(mLetters.get(mChoosePosition));
                 }
                 invalidate();
                 break;
@@ -257,7 +258,7 @@ public class SlideLetterView extends View {
             if (i == mChoosePosition) {
                 mPointY = pointY;
             } else {
-                canvas.drawText(mLetters.get(i).substring(0,1), mPointX, pointY, mLetterPaint);
+                canvas.drawText(mLetters.get(i).substring(0, 1), mPointX, pointY, mLetterPaint);
             }
         }
     }
@@ -274,16 +275,16 @@ public class SlideLetterView extends View {
             mSelectedLetterPaint.setTextSize(mSelectedTextSize);
             if (isSlide) {
                 mSelectedLetterPaint.setColor(mCircleTextBgColor);
-            }else {
+            } else {
                 mSelectedLetterPaint.setColor(mSelectedTextColor);
             }
             mSelectedLetterPaint.setTextAlign(Paint.Align.CENTER);
             mSelectedLetterPaint.setTypeface(Typeface.DEFAULT_BOLD);
-            canvas.drawText(mLetters.get(mChoosePosition).substring(0,1), mPointX, mPointY, mSelectedLetterPaint);
+            canvas.drawText(mLetters.get(mChoosePosition).substring(0, 1), mPointX, mPointY, mSelectedLetterPaint);
         }
         // 绘制提示字符
         if (mRatio >= 0.9f) {
-            String target = mLetters.get(mChoosePosition).substring(0,1);
+            String target = mLetters.get(mChoosePosition).substring(0, 1);
             Paint.FontMetrics fontMetrics = mSelectedLetterPaint.getFontMetrics();
             float baseline = Math.abs(-fontMetrics.bottom - fontMetrics.top);
             float x = mCircleCenterX;
@@ -369,8 +370,10 @@ public class SlideLetterView extends View {
         canvas.drawPath(mCirclePath, mWavePaint);
 
     }
+
     /**
      * 设置当前选中
+     *
      * @param pos
      */
     public void setCurrentPos(int pos) {
@@ -380,6 +383,7 @@ public class SlideLetterView extends View {
         mChoosePosition = pos;
         invalidate();
     }
+
     public List<String> getLetters() {
         return mLetters;
     }
