@@ -12,4 +12,4 @@
         }
  第二步 添加依赖库
   
-     api 'com.github.wangqiux:SideLetter:v1.0.2'
+     api 'com.github.wangqiux:SideLetter:v1.0.3'
